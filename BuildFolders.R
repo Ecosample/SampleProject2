@@ -1,10 +1,11 @@
 
 
+
 fd <- read.csv(file="C:/Users/mbayly/Desktop/Ecodat_jobs/QAQC/setup/folderset.csv")
 fd
 
 main <- "C:/Users/mbayly/Desktop/Ecodat_jobs/QAQC/OldLiveExport"
-setwd(main)
+setwd(main);
 for(i in 1:length(unique(fd$module))){
 	#dir.create(paste0(main, "/", unique(fd$module)[i]))
 	dir.create(as.character(unique(fd$module)[i]))
@@ -18,8 +19,9 @@ for(i in 1:length(unique(fd$module))){
 	setwd(main)
 }
 
-#line addition
-# i did a line addition here!!!
+##########################################
+##########################################
+##########################################
 ##########################################
 ##########################################
 # TEST FOR ANY DIFFERENCES
